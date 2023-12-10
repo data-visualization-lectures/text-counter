@@ -1,0 +1,62 @@
+<html>
+<head>
+<meta charset ="utf-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+
+<div class="container">
+	<div class="row v-space">
+		&nbsp;
+	</div>
+	<div class="row">
+		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+			<h2>文字数カウンター</h2>
+		</div>
+		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+			&nbsp;
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+			<p>文章を左のテキストエリアにコピペしてから「送信」ボタンを押してください。右のテキストエリアに改行ごとの分割した文字数を表示します。</p>
+		</div>
+		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+			&nbsp;
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+				<textarea class="form-control" id="userInput" rows="4"></textarea>
+		</div>
+		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+				<textarea class="form-control" id="userOutput" rows="4"></textarea>
+		</div>
+	</div>
+	&nbsp;
+	<div class="row">
+		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+			<button onclick="processText()" type="button" class="btn btn-primary">送信</button>
+		</div>
+		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+			&nbsp;
+		</div>
+	</div>
+	&nbsp;<br />&nbsp;
+	<div class="row">
+		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+			<p class="text-muted"><a href="https://visualizing.jp/" target="_blank">by Visualizing.JP</a></p>
+		</div>
+		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+			&nbsp;
+		</div>
+	</div>
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html> 
